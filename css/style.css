@@ -1,0 +1,15 @@
+body{
+	background: url('../css/images/background3.jpg');
+	font-family: 'Raleway', sans-serif;
+	font-size: 25px;
+}
+
+
+.header{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.row{
+    padding-bottom: 5px;
+}

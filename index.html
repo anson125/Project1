@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+        <div class="row header">
+            <div class="col s6 m12 #eeeeee grey lighten-3">
+                <span class="flow-text" ><center><strong><h1>Capture The Moment</h1></strong></center></span>
+            </div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col m1"></div>
+            <div class="col s6 m7">
+                <div class="row">
+                    <div class="col s6 m6">
+                        <div id="imgDiv"> <center><strong>Your Image</strong></center>
+                            <center><img id="theImg" width="300" height="300" /></center>
+                        </div>
+                            <div class="row">
+                                <div id="emotionText"></div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6">
+                        <div id="secondImage">
+                                <center><strong>Last Image Uploaded</strong></center>
+                            <center><img id="theImg2" width="300" height="300" /></center>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="imgForm">
+                    <span class="flow-text">Image URL</span>
+                    <input type="text" name="imgurl" id="imgurl" placeholder="Insert URL">
+                    <input type="submit" value="Upload URL" id="formSubmit">
+                </form>
+                <div id="errorMessage"></div>
+                <hr>
+            </div>
+
+            <div class="col s6 m3 #eeeeee grey lighten-3">
+                <Strong>
+                    <u>Instructions:</u>
+                </Strong>
+                <p>Here is where you will upload original image.</p>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col m1"></div>
+            <div class="col s6 m7">
+                <!-- <h2>Moods/Synonyms</h2> -->
+                <span class="flow-text">Moods/Synonyms</span>
+                <!--rendered buttons will fill in here-->
+                <div id="buttons-view" id="addsyntogif"></div>
+                <hr>
+            </div>
+            <div class="col s6 m3 #eeeeee grey lighten-3">
+                <p>Generated buttons based on image.<br>Click a button!</p>
+            </div>
+            
+        </div>
+        
+        <div class="row">
+            <div class="col m1"></div>
+            <div class="col s6 m7">
+                <!-- <h3>Giphy Result</h3> -->
+                <span class="flow-text">Giphy Result</span>
+                <div id="gifs-appear-here"></div>
+            </div>
+            <div class="col s6 m3 #eeeeee grey lighten-3">
+                <p>Giphy to choose from
+                    <br>
+                    (Right click and save for later.)
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/logic.js"></script>
+</body>
+
+</html>
+
